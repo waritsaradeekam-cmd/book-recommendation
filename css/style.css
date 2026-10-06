@@ -12,19 +12,19 @@ body {
 
 /* --- Custom Scrollbar (แถบเลื่อนดีไซน์สวยงามสำหรับ Quotes) --- */
 .custom-scrollbar::-webkit-scrollbar {
-    height: 8px; /* ความสูงของแถบเลื่อนแนวนอน */
+    height: 8px; 
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f4ebe8; /* สีพื้นหลังรางเลื่อน */
+    background: #f4ebe8; 
     border-radius: 9999px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #b5837f55; /* สีตัวแถบเลื่อน */
+    background: #b5837f55; 
     border-radius: 9999px;
     transition: background 0.3s ease;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #b5837f; /* สีตัวแถบเลื่อนเมื่อเอาเมาส์ชี้ */
+    background: #b5837f; 
 }
 
 /* --- Varied Scroll Animations --- */

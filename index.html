@@ -125,24 +125,25 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="relative py-24 sm:py-32 px-4 sm:px-6 overflow-hidden bg-white">
+        <section id="about" class="relative py-24 sm:py-32 px-4 sm:px-6 overflow-hidden bg-[#f4ebe8]">
             
             <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
                 <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#b5837f]/15 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-                <div class="absolute top-40 -right-20 w-72 h-72 bg-[#f4ebe8] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute top-40 -right-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div class="absolute -bottom-32 left-40 w-72 h-72 bg-[#b5837f]/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
             </div>
 
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
                 
-                <!-- ฝั่งซ้าย: จัดแบ่งข้อความเป็น 2 บรรทัดด้วย <br class="sm:block"> -->
+                <!-- ฝั่งซ้าย -->
                 <div class="anim-slide-right order-2 md:order-1 relative">
-                    <span class="inline-block py-1.5 px-4 rounded-full bg-gradient-to-r from-[#f4ebe8] to-white text-[#b5837f] text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 shadow-sm border border-[#b5837f]/10">
+                    <span class="inline-block py-1.5 px-4 rounded-full bg-gradient-to-r from-white to-[#faf8f5] text-[#b5837f] text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 shadow-sm border border-[#b5837f]/10">
                         ดำดิ่งลงไปในความทรงจำ
                     </span>
                     
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-medium mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#5A4A48] via-[#8a6865] to-[#b5837f] leading-snug">
-                        ทำไมคุณถึงควรดำดิ่งลงไป<br class="sm:block">ในความทรงจำเล่มนี้?
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#5A4A48] via-[#8a6865] to-[#b5837f] leading-snug">
+                        ทำไมคุณถึงควร<span class="inline-block">ดำดิ่งลงไป</span><br>
+                        ในความทรงจำเล่มนี้?
                     </h2>
                     
                     <div class="space-y-6 text-[#6D5D5C] text-base md:text-lg leading-relaxed relative z-10">
@@ -157,14 +158,14 @@
                     <div class="w-16 h-1 bg-gradient-to-r from-[#b5837f] to-transparent mt-10 rounded-full"></div>
                 </div>
 
-                <!-- ฝั่งขวา -->
+                <!-- ฝั่งขวา (เอาเอฟเฟกต์ซูมรูปภาพออกแล้ว) -->
                 <div class="anim-slide-left order-1 md:order-2 relative px-4 sm:px-0 group mt-8 md:mt-0">
-                    <div class="relative w-full aspect-[4/5] rounded-[2.5rem] sm:rounded-[3.5rem] overflow-hidden shadow-[0_30px_60px_rgb(181,131,127,0.2)] transition-transform duration-700 ease-out group-hover:scale-[1.02]">
-                        <img src="image/1000262871_front_XXXL.jpg" alt="ดอกไม้ที่ร่วงโรย" class="w-full h-full object-cover transition-transform duration-[2s] ease-in-out group-hover:scale-110">
+                    <div class="relative w-full aspect-[4/5] rounded-[2.5rem] sm:rounded-[3.5rem] overflow-hidden shadow-[0_30px_60px_rgb(181,131,127,0.2)]">
+                        <img src="image/1000262871_front_XXXL.jpg" alt="ดอกไม้ที่ร่วงโรย" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-tr from-[#b5837f]/40 via-transparent to-white/10 mix-blend-overlay pointer-events-none"></div>
                     </div>
                     
-                    <div class="absolute -bottom-8 -left-4 sm:-bottom-12 sm:-left-10 bg-white/70 backdrop-blur-lg border border-white/50 p-5 sm:p-6 rounded-2xl shadow-2xl w-64 sm:w-72 transform transition-all duration-500 group-hover:-translate-y-4 anim-float z-20">
+                    <div class="absolute -bottom-8 -left-4 sm:-bottom-12 sm:-left-10 bg-white/80 backdrop-blur-lg border border-white/50 p-5 sm:p-6 rounded-2xl shadow-2xl w-64 sm:w-72 transform transition-all duration-500 group-hover:-translate-y-4 anim-float z-20">
                         <svg class="w-6 h-6 text-[#b5837f]/50 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                         <p class="text-sm sm:text-base text-[#5A4A48] font-medium leading-relaxed italic">
                             "หน้าที่ของมันอาจไม่ใช่การอยู่ด้วยกัน... แต่คือการเข้ามาสอนให้เรารู้จักตัวเอง"
@@ -193,7 +194,6 @@
                     </span>
                 </div>
                 
-                <!-- เปลี่ยนชื่อคลาสเป็น custom-scrollbar เพื่อให้โชว์แท็บเลื่อน (Scrollbar) สวยๆ -->
                 <div class="flex overflow-x-auto snap-x snap-mandatory custom-scrollbar gap-4 sm:gap-6 pb-6 pt-4">
                     <div class="snap-center shrink-0 w-[85%] sm:w-[70%] md:w-[60%] lg:w-[45%] bg-[#f4ebe8]/80 p-6 sm:p-10 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] flex flex-col justify-between min-h-[240px] sm:min-h-[280px]">
                         <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4 sm:mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
@@ -243,7 +243,7 @@
 
             <div class="w-full flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-[#6D5D5C]/60 border-t border-[#b5837f]/10 pt-6 gap-4">
                 <div class="text-center md:text-left">
-                    <span>&copy; 2026 แด่รักที่ไม่ลงเอย - Book Recommendation </span>
+                    <span>&copy; 2026 แด่รักที่ไม่ลงเอย - Book Recommendation</span>
                 </div>
                 
                 <div class="text-center md:text-right">
