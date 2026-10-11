@@ -124,13 +124,13 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="relative py-24 sm:py-32 px-4 sm:px-6 overflow-hidden bg-[#f4ebe8]">
+        <!-- About Section (สีพื้นหลัง #faf8f5) -->
+        <section id="about" class="relative py-24 sm:py-32 px-4 sm:px-6 overflow-hidden bg-[#faf8f5]">
             
             <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-                <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#b5837f]/15 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#b5837f]/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
                 <div class="absolute top-40 -right-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-                <div class="absolute -bottom-32 left-40 w-72 h-72 bg-[#b5837f]/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+                <div class="absolute -bottom-32 left-40 w-72 h-72 bg-[#b5837f]/5 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
             </div>
 
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
@@ -158,7 +158,7 @@
                     <div class="w-16 h-1 bg-gradient-to-r from-[#b5837f] to-transparent mt-10 rounded-full"></div>
                 </div>
 
-                <!-- ฝั่งขวา (เอาเอฟเฟกต์ซูมรูปภาพออกแล้ว) -->
+                <!-- ฝั่งขวา -->
                 <div class="anim-slide-left order-1 md:order-2 relative px-4 sm:px-0 group mt-8 md:mt-0">
                     <div class="relative w-full aspect-[4/5] rounded-[2.5rem] sm:rounded-[3.5rem] overflow-hidden shadow-[0_30px_60px_rgb(181,131,127,0.2)]">
                         <img src="image/1000262871_front_XXXL.jpg" alt="ดอกไม้ที่ร่วงโรย" class="w-full h-full object-cover">
@@ -189,42 +189,115 @@
                         </h2>
                     </div>
                     <span class="text-xs sm:text-sm text-[#b5837f]/80 flex items-center gap-2 bg-[#f4ebe8] px-4 py-2 rounded-full w-fit">
-                        เลื่อนเพื่ออ่าน 
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        คลิกการ์ดเพื่อเปิดซองจดหมาย 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </span>
                 </div>
                 
-                <div class="flex overflow-x-auto snap-x snap-mandatory custom-scrollbar gap-4 sm:gap-6 pb-6 pt-4">
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[70%] md:w-[60%] lg:w-[45%] bg-[#f4ebe8]/80 p-6 sm:p-10 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] flex flex-col justify-between min-h-[240px] sm:min-h-[280px]">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4 sm:mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        <p class="text-[#5A4A48] text-base sm:text-lg md:text-xl leading-relaxed font-medium">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-6">
+                    
+                    <!-- โควทที่ 1 -->
+                    <div onclick="openEnvelope('modal-1')" class="bg-[#f4ebe8]/80 p-6 sm:p-10 rounded-[2rem] flex flex-col justify-between min-h-[240px] cursor-pointer hover:shadow-md transition-all group border border-[#b5837f]/10">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-[#5A4A48] text-base sm:text-lg leading-relaxed font-medium line-clamp-3">
                             "บางความสัมพันธ์... หน้าที่ของมันอาจไม่ใช่การอยู่ด้วยกันตลอดไป แต่คือการเข้ามาสอนให้เรารู้จักตัวเอง"
                         </p>
-                        <div class="w-10 sm:w-12 h-1 bg-[#b5837f]/30 mt-6 sm:mt-8 rounded-full"></div>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-xs text-[#b5837f] font-medium group-hover:underline">เปิดซองจดหมาย &rarr;</span>
+                            <div class="w-10 h-1 bg-[#b5837f]/30 rounded-full"></div>
+                        </div>
                     </div>
-                    
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[70%] md:w-[60%] lg:w-[45%] bg-white p-6 sm:p-10 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] border border-[#f4ebe8] shadow-sm flex flex-col justify-between min-h-[240px] sm:min-h-[280px]">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4 sm:mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        <p class="text-[#5A4A48] text-base sm:text-lg md:text-xl leading-relaxed font-medium">
+
+                    <!-- โควทที่ 2 -->
+                    <div onclick="openEnvelope('modal-2')" class="bg-white p-6 sm:p-10 rounded-[2rem] flex flex-col justify-between min-h-[240px] cursor-pointer hover:shadow-md transition-all group border border-[#f4ebe8] shadow-sm">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-[#5A4A48] text-base sm:text-lg leading-relaxed font-medium line-clamp-3">
                             "เราไม่ผิดที่ร้องไห้ให้กับดอกไม้ที่เราตั้งใจปลูก แต่มันไม่ยอมบาน"
                         </p>
-                        <div class="w-10 sm:w-12 h-1 bg-[#b5837f]/30 mt-6 sm:mt-8 rounded-full"></div>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-xs text-[#b5837f] font-medium group-hover:underline">เปิดซองจดหมาย &rarr;</span>
+                            <div class="w-10 h-1 bg-[#b5837f]/30 rounded-full"></div>
+                        </div>
                     </div>
 
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[70%] md:w-[60%] lg:w-[45%] bg-[#f4ebe8]/80 p-6 sm:p-10 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] flex flex-col justify-between min-h-[240px] sm:min-h-[280px]">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4 sm:mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        <p class="text-[#5A4A48] text-base sm:text-lg md:text-xl leading-relaxed font-medium">
+                    <!-- โควทที่ 3 -->
+                    <div onclick="openEnvelope('modal-3')" class="bg-[#f4ebe8]/80 p-6 sm:p-10 rounded-[2rem] flex flex-col justify-between min-h-[240px] cursor-pointer hover:shadow-md transition-all group border border-[#b5837f]/10">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-[#b5837f]/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-[#5A4A48] text-base sm:text-lg leading-relaxed font-medium line-clamp-3">
                             "จงอนุญาตให้ตัวเองแหลกสลาย เพราะรอยร้าวนั้นคือช่องทางที่แสงสว่างแห่งการเติบโตจะสาดส่องเข้ามา"
                         </p>
-                        <div class="w-10 sm:w-12 h-1 bg-[#b5837f]/30 mt-6 sm:mt-8 rounded-full"></div>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-xs text-[#b5837f] font-medium group-hover:underline">เปิดซองจดหมาย &rarr;</span>
+                            <div class="w-10 h-1 bg-[#b5837f]/30 rounded-full"></div>
+                        </div>
                     </div>
 
-                    <div class="shrink-0 w-2 sm:w-4"></div>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <!-- Modal ซองจดหมาย (1) -->
+    <div id="modal-1" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="relative w-full max-w-lg h-[460px] flex items-center justify-center">
+            <button onclick="closeEnvelope('modal-1')" class="absolute top-2 right-2 z-40 w-9 h-9 bg-white/90 text-[#5A4A48] rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors shadow-md">
+                &#x2715;
+            </button>
+            
+            <!-- แผ่นกระดาษจดหมาย -->
+            <div class="letter-content absolute inset-x-8 top-1 h-[320px] bg-white rounded-xl px-8 py-6 shadow-xl flex flex-col justify-center items-center text-center z-10 translate-y-36 transition-transform duration-700 ease-out overflow-y-auto border border-[#b5837f]/20">
+                <svg class="w-8 h-8 text-[#b5837f]/40 mx-auto mb-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-[#5A4A48] text-lg sm:text-xl leading-relaxed font-medium my-auto py-1">
+                    "บางความสัมพันธ์... หน้าที่ของมันอาจไม่ใช่การอยู่ด้วยกันตลอดไป แต่คือการเข้ามาสอนให้เรารู้จักตัวเอง"
+                </p>
+                <div class="w-16 h-1 bg-[#b5837f]/40 mx-auto rounded-full mt-3 flex-shrink-0"></div>
+            </div>
+
+            <!-- ตัวซองจดหมายด้านหน้า -->
+            <div class="absolute inset-x-0 bottom-0 h-64 bg-[#b5837f] rounded-b-2xl shadow-2xl pointer-events-none z-30 border-t-2 border-[#c99692]">
+                <div class="absolute top-0 left-0 w-full h-32 bg-[#a3706d] [clip-path:polygon(0_0,50%_100%,100%_0)] shadow-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ซองจดหมาย (2) -->
+    <div id="modal-2" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="relative w-full max-w-lg h-[460px] flex items-center justify-center">
+            <button onclick="closeEnvelope('modal-2')" class="absolute top-2 right-2 z-40 w-9 h-9 bg-white/90 text-[#5A4A48] rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors shadow-md">
+                &#x2715;
+            </button>
+            <div class="letter-content absolute inset-x-8 top-1 h-[320px] bg-white rounded-xl px-8 py-6 shadow-xl flex flex-col justify-center items-center text-center z-10 translate-y-36 transition-transform duration-700 ease-out overflow-y-auto border border-[#b5837f]/20">
+                <svg class="w-8 h-8 text-[#b5837f]/40 mx-auto mb-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-[#5A4A48] text-lg sm:text-xl leading-relaxed font-medium my-auto py-1">
+                    "เราไม่ผิดที่ร้องไห้ให้กับดอกไม้ที่เราตั้งใจปลูก แต่มันไม่ยอมบาน"
+                </p>
+                <div class="w-16 h-1 bg-[#b5837f]/40 mx-auto rounded-full mt-3 flex-shrink-0"></div>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 h-64 bg-[#b5837f] rounded-b-2xl shadow-2xl pointer-events-none z-30 border-t-2 border-[#c99692]">
+                <div class="absolute top-0 left-0 w-full h-32 bg-[#a3706d] [clip-path:polygon(0_0,50%_100%,100%_0)] shadow-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ซองจดหมาย (3) -->
+    <div id="modal-3" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="relative w-full max-w-lg h-[460px] flex items-center justify-center">
+            <button onclick="closeEnvelope('modal-3')" class="absolute top-2 right-2 z-40 w-9 h-9 bg-white/90 text-[#5A4A48] rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors shadow-md">
+                &#x2715;
+            </button>
+            <div class="letter-content absolute inset-x-8 top-1 h-[320px] bg-white rounded-xl px-8 py-6 shadow-xl flex flex-col justify-center items-center text-center z-10 translate-y-36 transition-transform duration-700 ease-out overflow-y-auto border border-[#b5837f]/20">
+                <svg class="w-8 h-8 text-[#b5837f]/40 mx-auto mb-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-[#5A4A48] text-lg sm:text-xl leading-relaxed font-medium my-auto py-1">
+                    "จงอนุญาตให้ตัวเองแหลกสลาย เพราะรอยร้าวนั้นคือช่องทางที่แสงสว่างแห่งการเติบโตจะสาดส่องเข้ามา"
+                </p>
+                <div class="w-16 h-1 bg-[#b5837f]/40 mx-auto rounded-full mt-3 flex-shrink-0"></div>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 h-64 bg-[#b5837f] rounded-b-2xl shadow-2xl pointer-events-none z-30 border-t-2 border-[#c99692]">
+                <div class="absolute top-0 left-0 w-full h-32 bg-[#a3706d] [clip-path:polygon(0_0,50%_100%,100%_0)] shadow-sm"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Outro & Footer -->
     <footer class="bg-[#faf8f5] pb-10 sm:pb-12 px-4 sm:px-6 pt-8 sm:pt-12">
@@ -259,8 +332,29 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Scripts (ไม่มีเสียงแล้ว) -->
     <script>
+        function openEnvelope(id) {
+            const modal = document.getElementById(id);
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                const letter = modal.querySelector('.letter-content');
+                letter.classList.remove('translate-y-36');
+                letter.classList.add('-translate-y-24');
+            }, 60);
+        }
+
+        function closeEnvelope(id) {
+            const modal = document.getElementById(id);
+            const letter = modal.querySelector('.letter-content');
+            letter.classList.remove('-translate-y-24');
+            letter.classList.add('translate-y-36');
+            
+            setTimeout(() => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+            }, 300);
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');

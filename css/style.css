@@ -10,7 +10,30 @@ body {
     color: white;
 }
 
-/* --- Custom Scrollbar (แถบเลื่อนดีไซน์สวยงามสำหรับ Quotes) --- */
+/* --- Pure CSS Envelope & Letter Slide-up Animation --- */
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* ตำแหน่งเริ่มต้น: ซ่อนแผ่นกระดาษจดหมายไว้ใต้ซองด้านล่าง */
+.letter-slide {
+    transform: translateY(180px);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* เมื่อกดเปิด (Checkbox Checked) จะแสดงซองจดหมายและสไลด์กระดาษขึ้นมา */
+.modal-toggle:checked ~ .modal-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-toggle:checked ~ .modal-overlay .letter-slide {
+    transform: translateY(0);
+}
+
+/* --- Custom Scrollbar --- */
 .custom-scrollbar::-webkit-scrollbar {
     height: 8px; 
 }
