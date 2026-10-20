@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แด่รักที่ไม่ลงเอย - unbloom</title>
+    <title>แด่รักที่ไม่เคยลงเอย... บทเรียนความรักที่สอนให้เรารู้จักตัวเอง</title>
+    <meta name="keywords" content="ความรัก,ความสัมพันธ์,สอนให้เรารู้จักตัวเอง,การเติบโต">
+    <meta name="description" content="หนังสือที่จะพาคุณไปเรียนรู้ว่า ความสัมพันธ์ที่ไม่สมหวัง แต่มันกลับช่วยให้เราเติบโตขึ้นในทุกรอยน้ำตา">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,13 +76,13 @@
     <main class="bg-[#faf8f5]">
         
         <!-- Intro Section -->
+
         <section class="py-16 sm:py-20 px-4 sm:px-6 overflow-hidden">
             <div class="max-w-4xl mx-auto anim-slide-left">
                 <div class="border-l-4 border-[#b5837f] pl-4 sm:pl-6 md:pl-8 py-2">
                     <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose text-[#6D5D5C] text-left">
                         ในช่วงวัยแห่งการค้นหา เราต่างเคยทุ่มเทรดน้ำพรวนดินให้กับความรัก แต่สุดท้ายมันกลับไม่ยอมเติบโต... <br class="hidden md:block">
-                        หนังสือเล่มนี้ไม่ใช่คู่มือที่บังคับให้คุณต้องรีบ "มูฟออน" แต่คือเพื่อนที่พร้อมจะนั่งเงียบๆ 
-                        อยู่ข้างคุณ ในวันที่ฝนตกในใจ
+                        นี่คือบันทึกความทรงจำและบทเรียนของความรักที่ไม่สมหวัง คุณไม่จำเป็นต้องมีพื้นฐานความรู้หรือประสบการณ์ความรักใดๆ มาก่อน หนังสือเล่มนี้ก็ไม่ใช่คู่มือที่บังคับให้คุณต้องรีบ "มูฟออน" แต่คือเพื่อนที่พร้อมจะนั่งเงียบๆ อยู่ข้างคุณ ในวันที่ฝนตกในใจ
                     </p>
                 </div>
             </div>
@@ -178,6 +180,107 @@
             </div>
         </section>
 
+        <!-- Interactive Section: ประเมินสถานะความสัมพันธ์ -->
+<section id="quiz" class="py-16 sm:py-24 px-4 sm:px-6 bg-[#f4ebe8]/50 border-y border-[#b5837f]/15">
+    <div class="max-w-4xl mx-auto text-center">
+        
+        <span class="text-[#b5837f] text-xs sm:text-sm font-semibold tracking-wider uppercase mb-2 block anim-fade">
+            ค้นหาบทเรียนที่ใช่สำหรับหัวใจคุณ
+        </span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-medium text-[#5A4A48] mb-4 anim-fade">
+            สถานะความสัมพันธ์ของคุณในตอนนี้ตรงกับข้อไหน?
+        </h2>
+        <p class="text-[#6D5D5C] text-sm sm:text-base max-w-xl mx-auto mb-8 sm:mb-10 anim-fade">
+            เลือกข้อที่ตรงกับหัวใจของคุณที่สุด เพื่อดูว่าหนังสือเล่มนี้อยากชวนคุณไปอ่านบทไหน...
+        </p>
+
+        <!-- ปุ่มเลือกสถานะ -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 sm:mb-10 anim-slide-up">
+            <button onclick="selectStatus('single')" class="status-btn p-4 rounded-2xl bg-white border border-[#b5837f]/20 text-[#5A4A48] hover:border-[#b5837f] hover:bg-[#faf8f5] transition-all text-left font-medium text-sm sm:text-base flex items-center justify-between group shadow-sm">
+                <span>เพิ่งเลิกรา / กำลังพยายามลืม</span>
+                <span class="text-[#b5837f] group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+
+            <button onclick="selectStatus('unrequited')" class="status-btn p-4 rounded-2xl bg-white border border-[#b5837f]/20 text-[#5A4A48] hover:border-[#b5837f] hover:bg-[#faf8f5] transition-all text-left font-medium text-sm sm:text-base flex items-center justify-between group shadow-sm">
+                <span> แอบรักข้างเดียว / เป็นได้แค่นึกถึง</span>
+                <span class="text-[#b5837f] group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+
+            <button onclick="selectStatus('toxic')" class="status-btn p-4 rounded-2xl bg-white border border-[#b5837f]/20 text-[#5A4A48] hover:border-[#b5837f] hover:bg-[#faf8f5] transition-all text-left font-medium text-sm sm:text-base flex items-center justify-between group shadow-sm">
+                <span> ยื้อต่อไปไม่ไหว / เหนื่อยกับความสัมพันธ์</span>
+                <span class="text-[#b5837f] group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+
+            <button onclick="selectStatus('healing')" class="status-btn p-4 rounded-2xl bg-white border border-[#b5837f]/20 text-[#5A4A48] hover:border-[#b5837f] hover:bg-[#faf8f5] transition-all text-left font-medium text-sm sm:text-base flex items-center justify-between group shadow-sm">
+                <span> เริ่มทำใจได้แล้ว / อยากกลับมารักตัวเอง</span>
+                <span class="text-[#b5837f] group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </button>
+        </div>
+
+        <!-- ผลลัพธ์คำแนะนำบทหนังสือ -->
+        <div id="chapter-result" class="hidden bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-[#b5837f]/20 max-w-2xl mx-auto text-left transform transition-all duration-500">
+            <div class="inline-block py-1 px-3 rounded-full bg-[#f4ebe8] text-[#b5837f] text-xs font-semibold mb-3" id="result-badge">
+                บทหนังสือที่แนะนำสำหรับคุณ
+            </div>
+            <h3 class="text-xl sm:text-2xl font-semibold text-[#5A4A48] mb-3" id="chapter-title">
+                บทที่ 01: ...
+            </h3>
+            <p class="text-[#6D5D5C] text-sm sm:text-base leading-relaxed mb-6" id="chapter-desc">
+                ...
+            </p>
+            <div class="p-4 rounded-xl bg-[#faf8f5] border-l-4 border-[#b5837f]">
+                <p class="text-xs sm:text-sm italic text-[#5A4A48]" id="chapter-quote">
+                    "..."
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Script ทำงานของระบบเลือกสถานะ -->
+<script>
+    const recommendations = {
+        single: {
+            badge: "บทสำหรับคนที่หัวใจกำลังแหลกสลาย",
+            title: "บทที่ 1: อนุญาตให้ตัวเองได้ร้องไห้แก่ดอกไม้ที่ไม่ยอมบาน",
+            desc: "บทนี้ไม่ได้บอกให้คุณต้องรีบเข้มแข็งหรือฝืนยิ้ม แต่ชวนให้คุณหยุดพัก ยอมรับความเจ็บปวดอย่างงดงาม และเรียนรู้ว่าการเลิกราไม่ใช่ความล้มเหลว แต่เป็นเพียงจุดจบของบทเรียนบทหนึ่ง",
+            quote: "การร้องไห้ให้กับความสัมพันธ์ที่ไม่สมหวัง ไม่ใช่ความอ่อนแอ... แต่มันคือหลักฐานว่าเราเคยทุ่มเทรักอย่างหมดหัวใจ"
+        },
+        unrequited: {
+            badge: "บทสำหรับคนที่รักเขาฝ่ายเดียว",
+            title: "บทที่ 3: ความทรงจำที่ไม่เคยครอบครอง",
+            desc: "บทความสั้นที่จะช่วยปลอบประโลมคนที่ทำดีที่สุดแล้วแต่กลับไม่ได้หัวใจของเขา ชวนมองว่าความงดงามของการแอบรัก คือการได้เห็นตัวเราเองเติบโตขึ้นจากการรู้จักให้ โดยไม่คาดหวังผลตอบแทน",
+            quote: "บางความสัมพันธ์ เกิดขึ้นเพื่อให้เราได้เรียนรู้การรักใครสักคน... ไม่ใช่เพื่อให้เราได้เป็นเจ้าของ"
+        },
+        toxic: {
+            badge: "บทสำหรับคนที่กำลังลังเลและเหนื่อยล้า",
+            title: "บทที่ 5: การปล่อยมือคือรูปการณ์หนึ่งของความรัก",
+            desc: "เมื่อรดน้ำพรวนดินเต็มที่แล้วแต่ต้นไม้ยังคงร่วงโรย บทนี้จะช่วยให้คุณกล้าที่จะโอบรับความจริง ยอมรับการปล่อยมือไม่ใช่การยอมแพ้ แต่มันคือการคืนอิสรภาพให้หัวใจของคุณเอง",
+            quote: "การปล่อยมือไม่ใช่เรื่องของความใจร้าย... แต่มันคือการยอมรับว่าเราไม่อาจบังคับให้ดอกไม้บานในฤดูที่ไม่ใช่ได้"
+        },
+        healing: {
+            badge: "บทสำหรับคนที่พร้อมจะโอบกอดตัวเองอีกครั้ง",
+            title: "บทที่ 8: พรุ่งนี้ดอกไม้ในใจจะกลับมาผลิบาน",
+            desc: "บทสรุปที่ช่วยเติมพลังใจ ตกผลึกทุกความเจ็บปวดที่ผ่านมาให้กลายเป็นปุ๋ยชั้นดี ช่วยให้คุณกลับมารัก รู้จัก และภาคภูมิใจในตัวตนเวอร์ชันใหม่ที่แข็งแกร่งกว่าเดิม",
+            quote: "รอยร้าวนั้นไม่ได้มีไว้เพื่อทำลายเรา... แต่มันคือช่องทางที่แสงสว่างแห่งการเติบโตจะสาดส่องเข้ามา"
+        }
+    };
+
+    function selectStatus(status) {
+        const data = recommendations[status];
+        const resultBox = document.getElementById('chapter-result');
+
+        document.getElementById('result-badge').innerText = data.badge;
+        document.getElementById('chapter-title').innerText = data.title;
+        document.getElementById('chapter-desc').innerText = data.desc;
+        document.getElementById('chapter-quote').innerText = data.quote;
+
+        resultBox.classList.remove('hidden');
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+</script>
+
         <!-- Quotes Section -->
         <section id="quotes" class="py-16 sm:py-24 px-4 sm:px-6 overflow-hidden">
             <div class="max-w-6xl mx-auto anim-fade">
@@ -237,6 +340,7 @@
         </section>
 
     </main>
+    
 
     <!-- Modal ซองจดหมาย (1) -->
     <div id="modal-1" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
@@ -332,7 +436,7 @@
         </div>
     </footer>
 
-    <!-- Scripts (ไม่มีเสียงแล้ว) -->
+    <!-- Scripts -->
     <script>
         function openEnvelope(id) {
             const modal = document.getElementById(id);
